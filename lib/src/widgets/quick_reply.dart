@@ -40,7 +40,7 @@ class QuickReply extends StatelessWidget {
             decoration: quickReplyStyle ??
                 BoxDecoration(
                   border: Border.all(
-                      width: 1.0, color: Theme.of(context).accentColor),
+                      width: 1.0, color: Color.fromRGBO(225, 225, 225, 1)),
                   borderRadius: BorderRadius.circular(5.0),
                 ),
             constraints: BoxConstraints(maxWidth: constraints.maxWidth / 3),
@@ -48,7 +48,7 @@ class QuickReply extends StatelessWidget {
               reply.title,
               style: quickReplyTextStyle ??
                   TextStyle(
-                    color: Theme.of(context).accentColor,
+                    color: Color.fromRGBO(225, 225, 225, 1),
                     fontSize: 12.0,
                   ),
             ),

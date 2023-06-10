@@ -241,10 +241,9 @@ class _MessageListViewState extends State<MessageListView> {
                                                         onTap: () {
                                                           Clipboard.setData(
                                                               ClipboardData(
-                                                                  text: widget
-                                                                      .messages[
-                                                                          i]
-                                                                      .text));
+                                                                  text: widget.messages[i].text ?? ''
+                                                              )
+                                                          );
                                                           Navigator.pop(
                                                               context);
                                                         },
